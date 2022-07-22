@@ -1,0 +1,4 @@
+1. SELECT gatunek, obraz from zwierzeta WHERE gromady_id = 4
+2. SELECT id, gromady_id, gatunek, wystepowanie FROM zwierzeta WHERE gromady_id = 4 or gromady_id = 5
+3. SELECT gatunek, odzywianie.id, rodzaj from zwierzeta, odzywianie WHERE odzywianie.id = zwierzeta.Odzywianie_id
+4. ALTER TABLE `odzywianie` DROP `informacja`
