@@ -1,0 +1,64 @@
+body{
+    margin:0;
+}
+
+#baner
+{
+    height: 110px;
+    background-color: #4E885C;
+    color: orange;
+    text-align: center;
+}
+
+#lewy
+{
+    width:30%;
+    height: 300px;
+    background-color: #72A37D;
+    float:left;
+}
+
+#srodkowy
+{
+    width:40%;
+    height: 300px;
+    background-color: #A2C3A9;
+    float:left;
+    background-image: url(pizza.png);
+    
+}
+
+#prawy
+{
+    width:30%;
+    height: 300px;
+    background-color: #72A37D;
+    float:left;
+    text-align: center;
+    
+}
+
+#dolny
+{
+    height: 250px;
+    background-color: #A2C3A9;
+    text-align: center;
+    clear:both;
+}
+
+#stopka
+{
+    color: orange;
+    background-color: #4E885C;
+}
+
+#odsylacz
+{
+    background-color: orange;
+    color: green;
+    padding: 15px;
+}
+
+ol{
+    display: inline-block;
+}
