@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pogotowie komputerowe</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <div id="kontener">
+        <div id="baner">
+            <img src="animacja.gif">
+        </div>
+
+        <div id="menu">
+            <a href="index.html">O nas</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+
+        <div class="glowny">
+
+        </div>
+
+        <div class="glowny">
+            <h3>Formularz kontaktowy</h3>
+            <table>
+                <tr><td>Imię:</td><td><input type="text" id="imie"></td></tr>
+                <tr><td>Nazwisko:</td><td><input type="text" id="nazwisko"></td></tr>
+                <tr><td>E-mail:</td><td><input type="text" id="email"></td></tr>
+                <tr><td>Usługa:</td><td>
+                    <select id="lista">
+                        <option>naprawa komputera</option>
+                        <option>odzyskiwanie danych</option>
+                        <option>problemy z oprogramowaniem</option>
+                        <option>konfiguracja sieci LAN</option>
+                        <option>inne</option>
+                    </select>
+                </td></tr>
+                <tr><td></td><td><input type="checkbox" id="kopia"> Wyślij kopię wiadomości</td></tr>
+                <tr><td></td><td><input type="reset" value="Resetuj" id="reset"><input type="submit" value="Prześlij" id="przeslij" onclick="wypisz()"></td></tr>
+            </table>
+            <br>
+                <p id="wynik"></p>
+        </div>
+
+        <div class="glowny">
+
+        </div>
+
+        <div id="stopka">
+            <p>Autor strony: <b>123123123123</b> </p>
+        </div>
+
+    </div>
+
+    <script>
+        function wypisz()
+        {
+            var imie = document.getElementById("imie").value;
+            var nazwisko = document.getElementById("nazwisko").value;
+            var email = document.getElementById("email").value;
+            var lista = document.getElementById("lista").value;
+
+            email = email.toLowerCase();
+
+            document.getElementById("wynik").innerHTML=imie+" "+nazwisko+"<br>"+email+"<br>"+"Usługa: "+lista;
+        }
+    </script>
+</body>
+</html>
