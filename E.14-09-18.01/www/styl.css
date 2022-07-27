@@ -1,0 +1,56 @@
+a{
+    color: yellow;
+}
+
+body{
+    font-family: Arial;
+    color: white;
+    margin:0;
+}
+
+#baner
+{
+    background-color: #5957a1;
+    text-align: center;
+    padding: 10px;
+    height: 70px;
+}
+
+#lewy
+{
+    background-color: #bbadcd;
+    width: 65%;
+    height: 450px;
+    overflow: scroll;
+    float:left;
+}
+
+#prawy
+{
+    background-color: #5957a1;
+    text-align: center;
+    width: 35%;
+    height: 450px;
+    float:left;
+}
+
+#stopka
+{
+    background-color: #5957a1;
+    text-align: center;
+    height: 50px;
+    clear: both;
+}
+
+hr{
+    border-color: yellow;
+}
+
+ul{
+    list-style-type: square;
+    display: inline-block;
+}
+
+td{
+    border: 1px dashed black;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+    <title>Szkoła ponadgimnazjalna</title>
+</head>
+<body>
+    <div id="baner">
+        <h1>Projekt strony internetowej szkoły ponadgimnazjalnej</h1>
+    </div>
+
+    <div id="lewy">
+        <table>
+            <tr><td>Treść zapytania</td><td style="width:405px;">Zrzut ekranu</td></tr>
+            <tr><td>INSERT INTO `klasa` (`id`, `nazwa`) VALUES ('5', '3a');</td><td><img src="kw1.png" alt="kw1.png"></td></tr>
+            <tr><td>SELECT klasa.nazwa, avg(uczen.Srednia_ocen) from klasa join uczen on uczen.id_klasy=klasa.id group by klasa.nazwa</td><td><img src="kw2.png" alt="kw2.png"></td></tr>
+            <tr><td>CREATE USER Dyrektor@localhost identified by 'dyr_123'</td><td><img src="kw3.png" alt="kw3.png"></td></tr>
+            <tr><td>GRANT ALL PRIVILEGES ON `szkola`.* TO 'Dyrektor'@'localhost' WITH GRANT OPTION;</td><td><img src="kw4.png" alt="kw4.png"></td></tr>
+        </table>
+    </div>
+
+     <div id="prawy">
+        <h2>Do pobrania</h2>
+        <ul>
+            <li><a href="../baza/zapytania.txt">zapytania SQL</a></li>
+            <li><a href="../baza/szkola_nowa.sql">baza danych</a></li>
+        </ul>
+        <hr>
+        <h3>Wyznaczanie najniższej średniej</h3>
+        <ul>
+            <li>Polak<input type="text" id="polak"></li>
+            <li>Nowak<input type="text" id="nowak"></li>
+            <li>Rysik<input type="text" id="rysik"></li>
+        </ul>
+        <br>
+        <button onclick="oblicz()">wyznacz</button>
+        <h3>Najniższa średnia: </h3>
+        <div id="wynik"></div>
+    </div>
+
+    <div id="stopka">
+        <h3>Stronę wykonał: 123123123</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
